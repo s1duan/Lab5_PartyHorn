@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
 function set_slider_bar_val(event){
     sliderBar.value = event.target.value;
-    audio.volume = event.target.value;
+    audio.volume = event.target.value/100.0;
 }
 
 function set_text_indicator_val(event){
     textIndicator.value = event.target.value;
-    audio.volume = event.target.value;
+    audio.volume = event.target.value/100.0;
 }
 // TODO
