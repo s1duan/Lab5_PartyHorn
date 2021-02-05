@@ -15,16 +15,16 @@ function set_slider_bar_val(event){
     sliderBar.value = event.target.value;
     audio.volume = event.target.value/100.0;
     if (event.target.value >= 67) {
-        volumeImg.src = "media/icons/volume-level-3.svg"
+        volumeImg.src = "assets/media/icons/volume-level-3.svg"
     }
     else if (event.target.value >= 34) {
-        volumeImg.src = "media/icons/volume-level-2.svg"
+        volumeImg.src = "assets/media/icons/volume-level-2.svg"
     }
     else if (event.target.value >= 1) {
-        volumeImg.src = "media/icons/volume-level-1.svg"
+        volumeImg.src = "assets/media/icons/volume-level-1.svg"
     }
     else{
-        volumeImg.src = "media/icons/volume-level-0.svg"
+        volumeImg.src = "assets/media/icons/volume-level-0.svg"
     }
 }
 
@@ -32,16 +32,16 @@ function set_text_indicator_val(event){
     textIndicator.value = event.target.value;
     audio.volume = event.target.value/100.0;
     if (event.target.value >= 67) {
-        volumeImg.src = "media/icons/volume-level-3.svg"
+        volumeImg.src = "assets/media/icons/volume-level-3.svg"
     }
     else if (event.target.value >= 34) {
-        volumeImg.src = "media/icons/volume-level-2.svg"
+        volumeImg.src = "assets/media/icons/volume-level-2.svg"
     }
     else if (event.target.value >= 1) {
-        volumeImg.src = "media/icons/volume-level-1.svg"
+        volumeImg.src = "assets/media/icons/volume-level-1.svg"
     }
     else{
-        volumeImg.src = "media/icons/volume-level-0.svg"
+        volumeImg.src = "assets/media/icons/volume-level-0.svg"
     }
 }
 // TODO
