@@ -8,9 +8,6 @@ var carHorn = document.getElementById("radio-car-horn");
 var partyHorn = document.getElementById("radio-party-horn");
 var button = document.getElementById("honk-btn")
 
-button.onclick = function() {
-    audio.play()
-}
 
 document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('#volume-number').onchange = set_slider_bar_val;
@@ -18,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('#radio-air-horn').onchange = set_air_horn;
     document.querySelector('#radio-car-horn').onchange = set_car_horn;
     document.querySelector('#radio-party-horn').onchange = set_party_horn;
+    document.querySelector('#honk-btn').onclick = function() { audio.play() }
 }, false);
 
 function set_slider_bar_val(event){
