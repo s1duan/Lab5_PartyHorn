@@ -8,7 +8,7 @@ var carHorn = document.getElementById("radio-car-horn");
 var partyHorn = document.getElementById("radio-party-horn");
 var button = document.getElementById("honk-btn")
 
-honk.onclick = function() {
+button.onclick = function() {
     audio.onplay()
 }
 
