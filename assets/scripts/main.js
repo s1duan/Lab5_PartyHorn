@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function(){
 function set_slider_bar_val(event){
     sliderBar.value = event.target.value;
     audio.volume = event.target.value/100.0;
+    button.disabled = false;
     if (event.target.value >= 67) {
         volumeImg.src = "assets/media/icons/volume-level-3.svg"
     }
@@ -41,6 +42,7 @@ function set_slider_bar_val(event){
 function set_text_indicator_val(event){
     textIndicator.value = event.target.value;
     audio.volume = event.target.value/100.0;
+    button.disabled = false;
     if (event.target.value >= 67) {
         volumeImg.src = "assets/media/icons/volume-level-3.svg"
     }
