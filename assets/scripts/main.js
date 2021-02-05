@@ -4,6 +4,8 @@ var textIndicator = document.getElementById("volume-number");
 var sliderBar = document.getElementById("volume-slider");
 var volumeImg = document.getElementById("volume-image");
 
+
+
 document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('#volume-number').onchange = set_slider_bar_val;
     document.querySelector('#volume-slider').onchange = set_text_indicator_val;
@@ -18,7 +20,7 @@ function set_slider_bar_val(event){
     else if (event.target.value >= 34) {
         volumeImg.src = "media/icons/volume-level-2.svg"
     }
-    else if (event.targe.value >= 1) {
+    else if (event.target.value >= 1) {
         volumeImg.src = "media/icons/volume-level-1.svg"
     }
     else{
@@ -35,7 +37,7 @@ function set_text_indicator_val(event){
     else if (event.target.value >= 34) {
         volumeImg.src = "media/icons/volume-level-2.svg"
     }
-    else if (event.targe.value >= 1) {
+    else if (event.target.value >= 1) {
         volumeImg.src = "media/icons/volume-level-1.svg"
     }
     else{
