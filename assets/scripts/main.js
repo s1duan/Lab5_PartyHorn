@@ -66,7 +66,7 @@ function set_car_horn(){
     }
 }
 
-function set_party_horn(event){
+function set_party_horn(){
     if (partyHorn.value){
         audio.src = "assets/media/audio/party-horn.mp3"
     }
