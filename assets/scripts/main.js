@@ -14,8 +14,10 @@ document.addEventListener('DOMContentLoaded', function(){
     document.querySelector('#radio-air-horn').onchange = set_air_horn;
     document.querySelector('#radio-car-horn').onchange = set_car_horn;
     document.querySelector('#radio-party-horn').onchange = set_party_horn;
-    document.querySelector('#honk-btn').onclick = function() { audio.play() }
-    event.preventDefault();
+    document.querySelector('#honk-btn').onclick = function(event) { 
+        event.preventDefault();
+        audio.play();
+    }
 }, false);
 
 function set_button(value){
